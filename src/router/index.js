@@ -12,6 +12,12 @@ export default new Router({
       component: () => import("@/components/index")
     },
     {
+      path: '/canvas-font',
+      name: 'canvas-font',
+      title: '字体',
+      component: () => import('@/components/canvas-font')
+    },
+    {
       path: '/lineChart',
       name: 'lineChart',
       title: '折线图(多条线)',
@@ -65,12 +71,12 @@ export default new Router({
     //   title: 'canvas8',
     //   component: () => import('@/components/canvas8')
     // },
-    // {
-    //   path: '/canvas-img1',
-    //   name: 'canvas-img1',
-    //   title: 'canvas-img1',
-    //   component: () => import('@/components/canvas-img1')
-    // },
+    {
+      path: '/canvas-img1',
+      name: 'canvas-img1',
+      title: 'canvas-img1',
+      component: () => import('@/components/canvas-img1')
+    },
     {
       path: '/canvas-img2',
       name: 'canvas-img2',
@@ -94,6 +100,72 @@ export default new Router({
       name: 'canvas-img5',
       title: '美术馆',
       component: () => import('@/components/canvas-img5')
+    },
+    {
+      path: '/canvas-img6',
+      name: 'canvas-img6',
+      title: '下载',
+      component: () => import('@/components/canvas-img6')
+    },
+    {
+      path: '/canvas9',
+      name: 'canvas9',
+      title: '跟随鼠标移动',
+      component: () => import('@/components/canvas9')
+    },
+    {
+      path: '/canvas10',
+      name: 'canvas10',
+      title: '旋转',
+      component: () => import('@/components/canvas10')
+    },
+    {
+      path: '/canvas11',
+      name: 'canvas11',
+      title: '状态',
+      component: () => import('@/components/canvas11')
+    },
+    {
+      path: '/canvas12',
+      name: 'canvas12',
+      title: '移动',
+      component: () => import('@/components/canvas12')
+    },
+    {
+      path: '/canvas13',
+      name: 'canvas13',
+      title: '旋转',
+      component: () => import('@/components/canvas13')
+    },
+    {
+      path: '/canvas14',
+      name: 'canvas14',
+      title: '缩放',
+      component: () => import('@/components/canvas14')
+    },
+    {
+      path: '/canvas15',
+      name: 'canvas15',
+      title: '变形',
+      component: () => import('@/components/canvas15')
+    },
+    {
+      path: '/canvas16',
+      name: 'canvas16',
+      title: '贝塞尔曲线',
+      component: () => import('@/components/canvas16')
+    },
+    {
+      path: '/canvas17',
+      name: 'canvas17',
+      title: 'Path2D',
+      component: () => import('@/components/canvas17')
+    },
+    {
+      path: '/canvas18',
+      name: 'canvas18',
+      title: 'fillStyle',
+      component: () => import('@/components/canvas18')
     },
   ]
 })

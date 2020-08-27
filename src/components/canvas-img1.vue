@@ -18,7 +18,7 @@ export default {
       // 通过数据嵌入图像
       const img = new Image()
       img.src = 'data:image/gif;base64,R0lGODlhCwALAIAAAAAA3pn/ZiH5BAEAAAEALAAAAAALAAsAAAIUhA+hkcuO4lmNVindo7qyrIXiGBYAOw==';
-      
+      ctx.drawImage(img, 10, 10)
     }
   }
 }

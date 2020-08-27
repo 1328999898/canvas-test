@@ -12,22 +12,30 @@ export default {
     const canvas = document.querySelector("#canvas");
     if (canvas.getContext) {
       const ctx = canvas.getContext("2d");
+      // 两条线相交处进行连接的形状
+      // round 圆盘  bevel 三角形  miter 菱形(默认)
+      ctx.lineJoin = "round"
+      // 线宽，默认1
+      ctx.lineWidth = 2
+      // 设置为虚线
+      // ctx.setLineDash([5])
+
       const unitWidth = 20;
       const unitHeight = 20;
-      for (let i = 0; i < canvas.width / unitWidth; i++) {
-        // 绘制竖线
-        ctx.moveTo(i * unitWidth, 0);
-        ctx.lineTo(i * unitWidth, canvas.height);
-      }
+      // for (let i = 0; i < canvas.width / unitWidth; i++) {
+      //   // 绘制竖线
+      //   ctx.moveTo(i * unitWidth, 0);
+      //   ctx.lineTo(i * unitWidth, canvas.height);
+      // }
 
-      for (let i = 0; i < canvas.height / unitHeight; i++) {
-        // 绘制横线
-        ctx.moveTo(0, i * unitHeight);
-        ctx.lineTo(canvas.width, i * unitHeight);
-      }
-      // ctx.strokeStyle = "#ccc";
-      ctx.strokeStyle = "#fff";
-      ctx.stroke();
+      // for (let i = 0; i < canvas.height / unitHeight; i++) {
+      //   // 绘制横线
+      //   ctx.moveTo(0, i * unitHeight);
+      //   ctx.lineTo(canvas.width, i * unitHeight);
+      // }
+      // // ctx.strokeStyle = "#ccc";
+      // ctx.strokeStyle = "#fff";
+      // ctx.stroke();
 
       // 定义原点
       const pointX = 100;
